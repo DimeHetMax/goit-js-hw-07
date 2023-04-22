@@ -31,8 +31,17 @@ function onImageClick (event){
     }
     const img = event.target.dataset.source;
     basicLightbox.create(`
-		<img src="${img}">
+		<img class ="js-opened-modal" src="${img}">
 	`).show()
 }
 
 
+// document.addEventListener("keydown", onButtonEscape);
+
+// function onButtonEscape(event){
+//     event.preventDefault();
+//     if(event.code !== "Escape"){
+//         return
+//     }
+//     console.log("It was definatly ESCAPE")
+// }
