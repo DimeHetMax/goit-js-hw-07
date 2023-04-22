@@ -3,12 +3,6 @@ import { galleryItems } from './gallery-items.js';
 
 console.log(galleryItems);
 
-
-// const instance = basicLightbox.create(`
-//     <img src="assets/images/image.png" width="800" height="600">
-// `)
-// instance.show()
-
 const ulEl = document.querySelector(".gallery")
 const imageMarkup = createImageMarkup(galleryItems)
 ulEl.insertAdjacentHTML('beforeend', imageMarkup)
@@ -29,8 +23,6 @@ function createImageMarkup(images){
         </li>`
     }).join("");
 }
-
-
 
 function onImageClick (event){
     event.preventDefault()
